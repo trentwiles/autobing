@@ -1,17 +1,11 @@
-var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      var data = this.responseText;
-    }
-  };
-  xhttp.open("GET", "https://random-word-api.herokuapp.com/word?number=30", true);
-  xhttp.send();
+var chunk = '["rearouse","jerkily","transductions","phrasing","liftgate","rumbustiousness","retrospects","nephologies","mueslis","urostyle","elutriation","resects","tetrameter","janty","hardiest","psychometrics","unquestionably","warfare","scolding","menudo","phytohormones","hematologies","staling","patamars","godlily","pamphlet","industrially","door","branded","curates"]'
 
-var parse = JSON.parse(data);
+
+var parse = JSON.parse(chunk);
 
 var count = 0;
 for(var i = 0; i < parse.length; ++i){
-    if(array[i] == 2)
+    if(parse[i] == 2)
         count++;
 }
 
