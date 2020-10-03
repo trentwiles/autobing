@@ -1,7 +1,6 @@
 const {Builder, By, Key, until} = require('selenium-webdriver');
-const word = require('./word.js');
 
-var chunk = '["rearouse","jerkily","transductions","phrasing","liftgate","rumbustiousness","retrospects","nephologies","mueslis","urostyle","elutriation","resects","tetrameter","janty","hardiest","psychometrics","unquestionably","warfare","scolding","menudo","phytohormones","hematologies","staling","patamars","godlily","pamphlet","industrially","door","branded","curates"]'
+var chunk = '["transductions","phrasing","liftgate","rumbustiousness","retrospects","nephologies","mueslis","urostyle","elutriation","resects","tetrameter","janty","hardiest","psychometrics","unquestionably","warfare","scolding","menudo","phytohormones","hematologies","staling","patamars","godlily","pamphlet","industrially","door","branded","curates"]'
 
 
 var parse = JSON.parse(chunk);
@@ -13,7 +12,7 @@ for(var i = 0; i < parse.length; ++i){
 }
 
 function getRandomWord() {
-	var random = Math.floor((Math.random() * 30) + 0);
+	var random = Math.floor((Math.random() * 28) + 0);
 	return parse[random];
 }
 
