@@ -1,4 +1,5 @@
 const {Builder, By, Key, until} = require('selenium-webdriver');
+const word = require('./word.js');
 
 (async function example() {
   let driver = await new Builder().forBrowser('firefox').build();
